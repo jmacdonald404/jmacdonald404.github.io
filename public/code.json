@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1",
+    "name": "Saltybot",
+    "tags": "statistics, prediction",
+    "img": "saltybot.jpg",
+    "description": "Saltybot is an ongoing project, designed to collect statistics from saltybet.com. The variability in character code and random matchup selection make reliably predicting the outcome a difficult task. The current iteration of this project aims to tackle this problem by leveraging machine learning models to identify patterns and create accurate predictions with limited datasets.",
+    "liveURL": "https://saltybot.fly.dev",
+    "p1": "Saltybot is an ongoing project, designed to collect statistics from saltybet.com. The statistics include the outcomes and variables of 1v1 CPU matches on the fighting game platform MUGEN. Each character has been uniquely programmed, with designs often pulled from various other games and uploaded to the internet over the past 25 years. With a roster estimated to be upwards of 9000 characters, and 24/7 uptime, saltybet.com provides a fun platform in which the audience can gamble using virtual currency on the outcome of a fight. The variability in character code and random matchup selection make reliably predicting the outcome a difficult task. The current iteration of this project aims to tackle this problem by leveraging machine learning models to identify and infer patterns and create accurate predictions with limited datasets."
+  },
+  {
+    "id": "2",
+    "name": "Food delivery app",
+    "tags": "webapp, catering platform",
+    "img": "delivery1.jpg",
+    "description": "This is a genericized version of a food delivery app I was contracted to develop in 2019. Built on Rails, it emulates functionality from other popular food delivery apps. Utilizing a number of APIs, we were able to make this project come to fruition in a timely manner."
+  },
+  {
+    "id": "3",
+    "name": "webaudiosynth",
+    "tags": "audio",
+    "img": "fnf.jpg",
+    "description": "Final project at CodeCore bootcamp."
+  },
+  {
+    "id": "4",
+    "name": "RIP/seperation experiment",
+    "tags": "printing, image processing",
+    "img": "CMYK_raster_print.jpg",
+    "description": "Experimental project dealing with automatically setting up digital images for print media. Features a sandbox to tweak preprint settings and render a simulated output before finalizing the files for print.",
+    "p1": "This is a two part project. One is based in research on modern colour theory. Two is exploring the technical basis of a printing process known as simulated process printing, commonly used in the screenprinting industry to create high quality reproduction of images using a limited set of inks and specialized dithering patterns. This process is very similar to, (and infact a slightly enhanced version of,) CMYK halftone printing, which has been generally the industry-standard for reproduction in print media where printing in colour is concerned. Both processes benefit from being able to reproduce the source image well past it's original resolution, as well as maintaining a decent semblance of the original colours represented in the source image using a form of halftoning, which allows for creating the illusion of many variations of colour using only a few. In the case of simulated process, the selection of ink colours is not restricted to the palette of CMYK and can often include more than 4. Selection is often guided by the Pantone Matching System, and a palette is created that will best represent the colours of the original image. Due to the precise nature of halftone patterns, and the massive disparity between digital and analog reproduction of colour images, revisions to the preprocessed image and ink selection can be a frequent occurence for a novice printmaker, resulting in many test prints and creating waste. My main objective with this project is to address that very issue, which has broad application outside of the scope aforementioned (eg. but not limited to: painting, photography, digital and analog colour blending applications)"
+  },
+  {
+    "id": "5",
+    "name": "Portfolio",
+    "tags": "design, presentation",
+    "img": "fnf.jpg",
+    "description": "Creating this portfolio site began simply with a desire to explore modern frontend design and use the outcome as a place to showcase a catalogue of my work. Research into various UI libraries led to adopting NextUI, for it's simple yet elegant style and the ease of implementing React based components."
+  }
+]
