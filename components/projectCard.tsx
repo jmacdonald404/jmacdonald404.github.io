@@ -38,7 +38,7 @@ export const ProjectCard = ({img, name, tags, description, liveURL, articleURL}:
 
           </div>
           <div className="flex justify-center items-end h-[60px]">
-              <Link href={articleURL} className=" " style={{"position":"absolute","bottom":"30px"}}><Chip className="px-6">Read More -&gtsp;</Chip></Link>
+              <Link href={articleURL} className=" " style={{"position":"absolute","bottom":"30px"}}><Chip className="px-6">Read More -&gt;</Chip></Link>
             </div>
           </div>
 
