@@ -1,8 +1,6 @@
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import { ProjectCard } from "@/components/projectCard";
-import { ProjectChips } from "@/components/projectChips";
-import { Link } from "@heroui/link";
 import fs from "fs";
 import path from "path";
 import { useRouter } from 'next/router'
@@ -12,7 +10,8 @@ interface Post {
   name: string;
   tags: string;
   description: string;
-  image: string;
+  img: string;
+  liveURL: string;
 }
 
 interface CodePageProps {

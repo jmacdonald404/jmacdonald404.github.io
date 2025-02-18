@@ -11,6 +11,7 @@ const env = { ...process.env }
   }
 
   // launch application
+  console.log('###Launching application with exec cmd : '+ process.argv.slice(2).join(' '))
   await exec(process.argv.slice(2).join(' '))
 })()
 

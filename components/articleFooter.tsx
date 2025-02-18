@@ -8,7 +8,7 @@ import {
 } from "@heroui/table";
 import { Link } from "@heroui/link";
 
-export const ArticleFooter = ({references, externals}) => {
+export const ArticleFooter = () => {
   return (
     <Table removeWrapper aria-label="aoeu static collection table">
       <TableHeader>
@@ -21,16 +21,16 @@ export const ArticleFooter = ({references, externals}) => {
           <TableCell><Link size="sm" isExternal showAnchorIcon href="https://saltybet.com">Saltybet</Link></TableCell>
         </TableRow>
         <TableRow key="2">
-          <TableCell></TableCell>
+          <TableCell>empty</TableCell>
           <TableCell><Link isExternal showAnchorIcon href="https://www.elecbyte.com/mugendocs-11b1/mugen.html">MUGEN official site</Link></TableCell>
         </TableRow>
         <TableRow key="3">
-          <TableCell></TableCell>
+          <TableCell>empty</TableCell>
           <TableCell><Link isExternal showAnchorIcon href="https://salty-boy.com/">SaltyBoy API</Link></TableCell>
         </TableRow>
         <TableRow key="4">
-          <TableCell></TableCell>
-          <TableCell></TableCell>
+          <TableCell>empty</TableCell>
+          <TableCell>empty</TableCell>
         </TableRow>
       </TableBody>
     </Table>

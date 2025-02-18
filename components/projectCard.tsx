@@ -1,16 +1,11 @@
 import React from "react";
-import {Card, CardHeader, CardBody, CardFooter} from "@heroui/card";
-import {Skeleton} from "@heroui/skeleton";
+import {Card, CardHeader} from "@heroui/react";
 import {Image} from "@heroui/image";
 import {Chip} from "@heroui/chip";
 import {Link} from "@heroui/link";
 
-export const ProjectCard = ({img, name, tags, description, liveURL, githubURL, articleURL, tech, children}) => {
-  const [isLoaded, setIsLoaded] = React.useState(false);
+export const ProjectCard = ({img, name, tags, description, liveURL, articleURL}: {img:string,name:string,tags:string,description:string,liveURL:string,articleURL:string}) => {
 
-  const toggleLoad = () => {
-    setIsLoaded(!isLoaded);
-  };
   return (
     <Card className="w-[960px] space-y-5 p-6" radius="lg">
       <CardHeader className="pb-0 pt-0 px-0 flex-row items-start">
@@ -24,7 +19,7 @@ export const ProjectCard = ({img, name, tags, description, liveURL, githubURL, a
           <div className="pl-6 w-[650px] flex " style={{'flexFlow':'column'}}>
 
             <div className="flex-row flex justify-between ">
-              <large className="font-bold text-3xl">{name}</large>
+              <span className="font-bold text-3xl">{name}</span>
               <div className="mt-1">
                 <Link href={liveURL}><Chip className="" color="secondary">demo</Chip></Link>
                 <Chip className="ml-2" color="secondary" variant="bordered">code</Chip>
@@ -39,11 +34,11 @@ export const ProjectCard = ({img, name, tags, description, liveURL, githubURL, a
 
 
             <div className="flex-column items-between">
-              <medium className="text-default-600">{description}</medium>
+              <span className="text-default-600">{description}</span>
 
           </div>
           <div className="flex justify-center items-end h-[60px]">
-              <Link href={articleURL} className=" " style={{"position":"absolute","bottom":"30px"}}><Chip className="px-6">Read More -></Chip></Link>
+              <Link href={articleURL} className=" " style={{"position":"absolute","bottom":"30px"}}><Chip className="px-6">Read More -&gtsp;</Chip></Link>
             </div>
           </div>
 

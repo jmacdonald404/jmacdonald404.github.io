@@ -4,7 +4,6 @@ import fs from "fs"
 import path from "path"
 import { Article } from '@/components/article'
 import { title } from "@/components/primitives";
-import { Button } from "@heroui/button"
 
 export async function getStaticPaths() {
   const filePath = path.join(process.cwd(), "public", "code.json");
