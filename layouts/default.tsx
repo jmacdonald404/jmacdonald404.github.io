@@ -22,11 +22,11 @@ export default function DefaultLayout({
         <Link
           isExternal
           className="flex items-center gap-1 text-current"
-          href="https://nextui.org/"
-          title="nextui.org homepage"
+          href="https://heroui.org/"
+          title="heroui.org homepage"
         >
           <span className="text-default-600">Powered by</span>
-          <p className="text-primary">NextUI</p>
+          <p className="text-primary">HeroUI</p>
         </Link>
       </footer>
       <ScrollToTopButton />
