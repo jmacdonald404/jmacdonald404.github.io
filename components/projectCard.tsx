@@ -21,8 +21,8 @@ export const ProjectCard = ({img, name, tags, description, liveURL, githubURL, a
             <div className="flex-row flex justify-between ">
               <span className="font-bold text-3xl">{name}</span>
               <div className="mt-1">
-                <Link isExternal showAnchorIcon href={liveURL}><Chip className="" color="secondary">demo</Chip></Link>
-                <Link isExternal showAnchorIcon href={githubURL}><Chip className="ml-2" color="secondary" variant="bordered">code</Chip></Link>
+                <Link isExternal href={liveURL}><Chip className="" color="secondary">demo</Chip></Link>
+                <Link isExternal href={githubURL}><Chip className="ml-2" color="secondary" variant="bordered">code</Chip></Link>
               </div>
               </div>
             <div className="flex flex-row">
