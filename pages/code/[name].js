@@ -51,6 +51,11 @@ function PostPage({ post }) {
                 articleURL={`/code/${post.name}`}
                 description={post.description}
                 liveURL={post.liveURL}
+                githubURL={post.githubURL}
+                p1={post.p1}
+                p2={post.p2}
+                p3={post.p3}
+                tech={post.tech}
                 >
 
         </Article>

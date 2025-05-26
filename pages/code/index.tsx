@@ -12,6 +12,7 @@ interface Post {
   description: string;
   img: string;
   liveURL: string;
+  githubURL: string;
 }
 
 interface CodePageProps {
@@ -55,6 +56,7 @@ export default function DocsPage({posts}: CodePageProps) {
                 articleURL={`/code/${post.name}`}
                 description={post.description}
                 liveURL={post.liveURL}
+                githubURL={post.githubURL}
                 >
 
 

@@ -1,25 +1,62 @@
 [
   {
     "id": "1",
+    "name": "Food delivery app",
+    "tags": "webapp, catering platform",
+    "img": "delivery1.jpg",
+    "description": "This is a genericized version of a food delivery app I was contracted to develop in 2019. Built on Rails, it emulates functionality from other popular food delivery apps. Utilizing a number of APIs, we were able to make this project come to fruition in a timely manner.",
+    "p1": "This is a genericized version of a food delivery app I was contracted to develop in 2019. Built on Rails, it emulates functionality from other popular food delivery apps. Utilizing a number of APIs, we were able to make this project come to fruition in a timely manner.",
+    "p2": "",
+    "p3": "",
+    "ref1": "",
+    "ref2": "",
+    "ref3": "",
+    "ref4": "",
+    "see1": "",
+    "see2": "",
+    "see3": "",
+    "see4": "",
+    "tech": "ruby on rails"
+  },
+  {
+    "id": "2",
     "name": "Saltybot",
     "tags": "statistics, prediction",
     "img": "saltybot.jpg",
     "description": "Saltybot is an ongoing project, designed to collect statistics from saltybet.com. The variability in character code and random matchup selection make reliably predicting the outcome a difficult task. The current iteration of this project aims to tackle this problem by leveraging machine learning models to identify patterns and create accurate predictions with limited datasets.",
     "liveURL": "https://saltybot.fly.dev",
-    "p1": "Saltybot is an ongoing project, designed to collect statistics from saltybet.com. The statistics include the outcomes and variables of 1v1 CPU matches on the fighting game platform MUGEN. Each character has been uniquely programmed, with designs often pulled from various other games and uploaded to the internet over the past 25 years. With a roster estimated to be upwards of 9000 characters, and 24/7 uptime, saltybet.com provides a fun platform in which the audience can gamble using virtual currency on the outcome of a fight. The variability in character code and random matchup selection make reliably predicting the outcome a difficult task. The current iteration of this project aims to tackle this problem by leveraging machine learning models to identify and infer patterns and create accurate predictions with limited datasets."
-  },
-  {
-    "id": "2",
-    "name": "Food delivery app",
-    "tags": "webapp, catering platform",
-    "img": "delivery1.jpg",
-    "description": "This is a genericized version of a food delivery app I was contracted to develop in 2019. Built on Rails, it emulates functionality from other popular food delivery apps. Utilizing a number of APIs, we were able to make this project come to fruition in a timely manner."
+    "p1": "Saltybot is an ongoing project, designed to collect statistics from saltybet.com. The statistics include the outcomes and variables of 1v1 CPU matches on the fighting game platform MUGEN. Each character has been uniquely programmed, with designs often pulled from various other games and uploaded to the internet over the past 25 years. With a roster estimated to be upwards of 9000 characters, and 24/7 uptime, saltybet.com provides a fun platform in which the audience can gamble using virtual currency on the outcome of a fight. The variability in character code and random matchup selection make reliably predicting the outcome a difficult task. The current iteration of this project aims to tackle this problem by leveraging machine learning models to identify and infer patterns and create accurate predictions with limited datasets.",
+    "p2": "I first stumbled upon saltybet during my time at CodeCore Bootcamp in Vancouver, BC in 2017. It was a simple distraction that I would turn my attention to while waiting for bundler to fetch rubygems (particularly nokogiri at the time), or just to take a break from digesting the algorithm lesson of the day. Suffice to say, in spite of the mild enjoyment of making a wager on what was essentially a coin-toss, I didn&apos;t have the bandwidth to memorize the sheer volume of combinations of fighter attributes and statistics. The obvious solution was to create Saltybot.",
+    "p3": "Saltybot had remained a fever-dream up until December 2024. I&apos;m glad I didn&apos;t dive deeply into it sooner. Sure, writing a bot to scrape the data from either twitch chat or the saltybet site itself was not a novel or insurmountable task by any means, but reading through others&apos; research into similar projects has lead to some interesting discoveries. Notably of which is the suspicion of [https://github.com/odderaser/msu-writing-project/] (who wrote a lovely thesis on deriving probabilities of saltybet outcomes), who posited that the algorithm that selects the fighters for each contest is likely to be at an even skill level to one-another [reference]. Fine-tuning my own iterations of Saltybot seem to correlate this, as any sort of basic metric I implemented (elo, winstreaks, perceived strength based on audience favouritism) did not have a high rate of reliability.",
+    "ref1": "",
+    "ref2": "",
+    "ref3": "",
+    "ref4": "",
+    "see1": "",
+    "see2": "",
+    "see3": "",
+    "see4": "",
+    "tech": "node"
   },
   {
     "id": "5",
     "name": "Portfolio",
     "tags": "design, presentation",
     "img": "fnf.jpg",
-    "description": "Creating this portfolio site began simply with a desire to explore modern frontend design and use the outcome as a place to showcase a catalogue of my work. Research into various UI libraries led to adopting NextUI, for it's simple yet elegant style and the ease of implementing React based components."
+    "description": "Creating this portfolio site began simply with a desire to explore modern frontend design and use the outcome as a place to showcase a catalogue of my work. Research into various UI libraries led to adopting NextUI, for it's simple yet elegant style and the ease of implementing React based components.",
+    "liveURL": "https://portfo-sparkling-lake-4200.fly.dev/",
+    "githubURL": "https://github.com/jmacdonald404/portfo",
+    "p1": "Creating this portfolio site began simply with a desire to explore modern frontend design and use the outcome as a place to showcase a catalogue of my work. Research into various UI libraries led to adopting NextUI, for it's simple yet elegant style and the ease of implementing React based components.",
+    "p2": "",
+    "p3": "",
+    "ref1": "",
+    "ref2": "",
+    "ref3": "",
+    "ref4": "",
+    "see1": "",
+    "see2": "",
+    "see3": "",
+    "see4": "",
+    "tech": "express.js, fly.io, psql"
   }
 ]

@@ -4,7 +4,7 @@ import {Image} from "@heroui/image";
 import {Chip} from "@heroui/chip";
 import {Link} from "@heroui/link";
 
-export const ProjectCard = ({img, name, tags, description, liveURL, articleURL}: {img:string,name:string,tags:string,description:string,liveURL:string,articleURL:string}) => {
+export const ProjectCard = ({img, name, tags, description, liveURL, githubURL, articleURL}: {img:string,name:string,tags:string,description:string,liveURL:string,githubURL:string,articleURL:string}) => {
 
   return (
     <Card className="w-[960px] space-y-5 p-6" radius="lg">
@@ -21,8 +21,8 @@ export const ProjectCard = ({img, name, tags, description, liveURL, articleURL}:
             <div className="flex-row flex justify-between ">
               <span className="font-bold text-3xl">{name}</span>
               <div className="mt-1">
-                <Link href={liveURL}><Chip className="" color="secondary">demo</Chip></Link>
-                <Chip className="ml-2" color="secondary" variant="bordered">code</Chip>
+                <Link isExternal showAnchorIcon href={liveURL}><Chip className="" color="secondary">demo</Chip></Link>
+                <Link isExternal showAnchorIcon href={githubURL}><Chip className="ml-2" color="secondary" variant="bordered">code</Chip></Link>
               </div>
               </div>
             <div className="flex flex-row">
