@@ -44,9 +44,9 @@ export default function IndexPage() {
         <div className="mt-8 text-center max-w-lg">
           Contained within these pages are a selection of projects that I have worked on over the past decade, along with the code and a writeup detailing some of the process of creating each one. I have dabbled in many languages and frameworks over the years, but these days I tend to keep Rails, Node, and Python handy.
         </div>
-        <div className="mt-20">
-          maybe I will put a link to art portfolio here as an aside
-        </div>
+        {/*<div className="mt-20">*/}
+        {/*  maybe I will put a link to art portfolio here as an aside*/}
+        {/*</div>*/}
       </section>
     </DefaultLayout>
   );
