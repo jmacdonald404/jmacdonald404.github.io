@@ -8,7 +8,7 @@
     "liveURL": "https://fda-work1.fly.dev/",
     "githubURL": "https://github.com/jmacdonald404/fda-work1",
     "p1": "During the summer of 2019, I was contacted by a new startup to develop and launch their food delivery app. A previous developer had fleshed out a basic prototype, but had parted from the company before much of the needed functionality was implemented. I saw a great product and business plan behind it, as well as a great opportunity to sink my teeth into my first real production app. By the time the backend was going through QA, the UI was feeling a bit dated, so we did a complete redesign of the frontend to give it a modern edge.",
-    "p2": "From the get-go, the focus was MVP. After immersing myself in the code that was already in place, I prioritized the implementation of processing orders and payments. Stripe's API stood out to me, being well documented and robust enough for what we needed and then some. Building our payment flow was much less daunting than I had initially anticipated and all thanks to Stripe's engineering.",
+    "p2": "From the get-go, the focus was MVP. After immersing myself in the code that was already in place, We set up a Trello board to organize and track our path forward. I prioritized the implementation of processing orders and payments. Stripe's API stood out to me, being well documented and robust enough for what we needed and then some. Building our payment flow was much less daunting than I had initially anticipated and all thanks to Stripe's engineering.",
     "p3": "",
     "ref1": "",
     "ref2": "",
