@@ -3,11 +3,11 @@ import {Card, CardHeader, CardBody, CardFooter} from "@heroui/react";
 import {Image} from "@heroui/image";
 import {Chip} from "@heroui/chip";
 import {Link} from "@heroui/link";
-import {ArticleImage} from "./articleImage"
-import {ArticleFooter} from "./articleFooter"
+// import {ArticleImage} from "./articleImage"
+// import {ArticleFooter} from "./articleFooter"
 import {Divider} from "@heroui/divider"
 
-export const Article = ({img, name, tags, tech, description, p1, p2, p3, liveURL, githubURL}:{img:string,name:string,tags:string,description:string,p1:string,p2:string,p3:string,liveURL:string,githubURL:string,articleURL:string,tech:string,children:string}) => {
+export const Article = ({img, name, tags, tech, p1, p2, p3, liveURL, githubURL}:{img:string,name:string,tags:string,description:string,p1:string,p2:string,p3:string,liveURL:string,githubURL:string,articleURL:string,tech:string,children:string}) => {
 
   return (
     <Card className="w-[960px] space-y-5 p-6" radius="lg">
