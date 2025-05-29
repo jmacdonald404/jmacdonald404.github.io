@@ -1,6 +1,6 @@
 import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
-import { ProjectCard } from "@/components/projectCard";
+import { ProjectCard } from "@/components/article/ProjectCard";
 import fs from "fs";
 import path from "path";
 import { useRouter } from 'next/router'
@@ -10,9 +10,12 @@ interface Post {
   name: string;
   tags: string;
   description: string;
-  img: string;
-  liveURL: string;
-  githubURL: string;
+  headerImage: {
+    src: string;
+    alt: string;
+  };
+  liveURL?: string;
+  githubURL?: string;
 }
 
 interface CodePageProps {
@@ -50,19 +53,15 @@ export default function DocsPage({posts}: CodePageProps) {
           {posts.map((post) => (
             <li key={post.id} className="py-5">
               <ProjectCard
-                img={post.img}
-                name={post.name}
+                title={post.name}
                 tags={post.tags}
-                articleURL={`/code/${post.name}`}
                 description={post.description}
+                headerImage={post.headerImage}
                 liveURL={post.liveURL}
                 githubURL={post.githubURL}
-                >
-
-
-              </ProjectCard>
+                articleURL={`/code/${post.name}`}
+              />
             </li>
-
           ))}
         </ul>
 

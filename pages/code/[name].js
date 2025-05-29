@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import DefaultLayout from "@/layouts/default"
 import fs from "fs"
 import path from "path"
-import { Article } from '@/components/article'
+import { Article } from '@/components/article/Article'
 import { title } from "@/components/primitives";
 
 export async function getStaticPaths() {
@@ -45,20 +45,16 @@ function PostPage({ post }) {
           <h1 style={{opacity:"0"}}>null</h1>
         </div>
         <Article
-                img={post.img}
-                name={post.name}
-                tags={post.tags}
-                articleURL={`/code/${post.name}`}
-                description={post.description}
-                liveURL={post.liveURL}
-                githubURL={post.githubURL}
-                p1={post.p1}
-                p2={post.p2}
-                p3={post.p3}
-                tech={post.tech}
-                >
-
-        </Article>
+          title={post.name}
+          tags={post.tags}
+          headerImage={post.headerImage}
+          tech={post.tech}
+          liveURL={post.liveURL}
+          githubURL={post.githubURL}
+          sections={post.sections}
+          references={post.references}
+          seeAlso={post.seeAlso}
+        />
       </section>
     </DefaultLayout>
   );

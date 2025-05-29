@@ -3,62 +3,224 @@
     "id": "1",
     "name": "Food delivery app",
     "tags": "webapp, catering platform",
-    "img": "delivery1.jpg",
+    "headerImage": {
+      "src": "/delivery1.jpg",
+      "alt": "Food delivery app interface"
+    },
     "description": "This is a generic version of a food delivery app I was contracted to develop in 2019. Built on Rails, it emulates functionality from other popular food delivery apps. Utilizing a number of APIs, we were able to make this project come to fruition in a timely manner.",
     "liveURL": "https://fda-work1.fly.dev/",
     "githubURL": "https://github.com/jmacdonald404/fda-work1",
-    "p1": "During the summer of 2019, I was contacted by a new startup to develop and launch their food delivery app. The idea was to combine the ease of using a food delivery app with catering for offices or large groups. A previous developer had fleshed out a basic prototype, but had parted from the company before much of the needed functionality was implemented. I saw a great product and business plan behind it, as well as a great opportunity to sink my teeth into my first real production app. By the time the backend was going through QA, the UI was feeling a bit dated, so we did a complete redesign of the frontend to give it a modern edge.",
-    "p2": "From the get-go, the focus was MVP. After immersing myself in the code that was already in place, We set up a Trello board to organize and track our path forward. I prioritized the implementation of processing orders and payments. Stripe's API stood out to me, being well documented and robust enough for what we needed and then some. Building our payment flow was much less daunting than I had initially anticipated and all thanks to Stripe's engineering.",
-    "p3": "We also needed a way for the app to communicate to the customer, our admins, our delivery drivers, and the restaurants any relevant details needed to get the order processed and in the hands of the customer. Automated email was necessary but not sufficient for real time updates and keeping a paper-trail from the app to the customer's door. SMS updates kept everyone in the loop and were more reliable than email. Twilio's API was a great fit for this, and I was able to rapidly implement the base code. Designing the SMS templates was a fun challenge, as I had to consider the limited space available and how to convey the most information in the least amount of characters. We wanted the SMS UX for the drivers to be as streamlined as possible to minimize delay, so we kept the messages delivered maximally concise, and structured a one-word response system for confirmations and updates.",
-    "ref1": "",
-    "ref2": "",
-    "ref3": "",
-    "ref4": "",
-    "see1": "",
-    "see2": "",
-    "see3": "",
-    "see4": "",
-    "tech": "ruby on rails"
+    "tech": "ruby on rails",
+    "sections": [
+      {
+        "type": "text",
+        "header": "Project Overview",
+        "content": [
+          {
+            "text": "In summer 2019, I was contracted by a startup to develop their food delivery app—a platform designed to combine the convenience of traditional food delivery with catering capabilities for offices and large groups. Built on Rails, the app emulates functionality from popular food delivery platforms while incorporating unique features for bulk ordering."
+          },
+          {
+            "text": "When I joined the project, a previous developer had created a basic prototype but had left before implementing core functionality. Recognizing both the strong business plan and the opportunity to work on my first production app, I took on the challenge of bringing the concept to full fruition."
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "content": "",
+        "imageProps": {
+          "src": "/delivery-dashboard.jpg",
+          "alt": "Food delivery app dashboard interface showing the main order management screen",
+          "position": "full",
+          "showCaption": false
+        }
+      },
+      {
+        "type": "text",
+        "header": "Team Structure and Process",
+        "content": [
+          {
+            "text": "Our lean team consisted of three people: the CEO, a graphic designer, and myself as the sole developer. The CEO defined must-haves versus nice-to-haves, collaborating with me to assess technical feasibility for our minimum viable product (MVP). We organized our workflow using Trello boards to track development priorities, with my time estimates for each feature guiding our planning."
+          },
+          {
+            "text": "The development process followed a structured approach: I focused on backend functionality while the CEO worked with the graphic designer to create layouts for frontend implementation. Weekly meetings ensured we maintained focus and could pivot as needed throughout the development cycle."
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "header": "Technical Implementation",
+        "content": [
+          {
+            "subheader": "Payment Processing",
+            "text": "From the outset, our priority was implementing order processing and payment functionality. [Stripe's API] proved ideal for our needs—well-documented and robust enough to handle our requirements with room for growth. The payment flow implementation was surprisingly straightforward thanks to Stripe's solid engineering foundation."
+          },
+          {
+            "subheader": "Communication System",
+            "text": "A critical requirement was real-time communication between customers, admins, delivery drivers, and restaurants throughout the order lifecycle. While automated email provided necessary documentation, SMS updates through [Twilio's API] offered the reliability and immediacy we needed."
+          },
+          {
+            "subheader": "UX Optimization",
+            "text": "Designing SMS templates presented an interesting challenge: maximizing information within character limits while maintaining clarity. For drivers, we prioritized streamlined UX with maximally concise messages and a one-word response system for confirmations and updates to minimize delays."
+          },
+          {
+            "subheader": "UI Modernization",
+            "text": "During backend QA, we recognized that the existing UI felt dated. This led to a complete frontend redesign to give the app a modern edge, ensuring the user experience matched the robust functionality we'd built."
+          }
+        ],
+        "links": [
+          {
+            "text": "Twilio's API",
+            "url": "https://www.twilio.com/docs/sms/api"
+          },
+          {
+            "text": "Stripe's API",
+            "url": "https://stripe.com/docs/api"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "header": "Reflections",
+        "content": [
+          {
+            "text": "The MVP mindset served us well for rapid deployment, but it also created some blind spots in long-term planning. If I were to approach this project again, I would consider using Electron and React (or similar component-based frameworks) from the beginning, along with a mobile-first design perspective. The logical next step for this type of app would be mobile transition—a significant undertaking that would have been easier with different initial architectural decisions. Having never previously architected a full-scale production app, I learned valuable lessons about planning for application evolution beyond the initial launch phase."
+          },
+          {
+            "text": "The most rewarding aspect was testing the complete user flow after API implementation—witnessing the seamless communication between different code systems working in tandem to create something genuinely useful. There's something deeply satisfying about that orchestration of technologies, like hearing a beautiful symphony where each component plays its part perfectly."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "text": "Ruby on Rails Guides",
+        "url": "https://guides.rubyonrails.org/"
+      },
+      {
+        "text": "Stripe Documentation",
+        "url": "https://stripe.com/docs"
+      }
+    ],
+    "seeAlso": [
+      {
+        "text": "Similar Project: UberEats",
+        "url": "https://www.ubereats.com"
+      }
+    ]
   },
   {
     "id": "2",
     "name": "Saltybot",
     "tags": "statistics, prediction",
-    "img": "saltybot.jpg",
-    "description": "Saltybot is an ongoing project, designed to collect statistics from saltybet.com. The variability in character code and random matchup selection make reliably predicting the outcome a difficult task. The current iteration of this project aims to tackle this problem by leveraging machine learning models to identify patterns and create accurate predictions with limited datasets.",
+    "headerImage": {
+      "src": "/saltybot.jpg",
+      "alt": "Saltybot interface screenshot"
+    },
+    "description": "Saltybot is an ongoing project, designed to collect statistics from saltybet.com. The variability in character code and random matchup selection make reliably predicting the outcome a difficult task.",
     "liveURL": "https://saltybot.fly.dev",
-    "p1": "Saltybot is an ongoing project, designed to collect statistics from saltybet.com. The statistics include the outcomes and variables of 1v1 CPU matches on the fighting game platform MUGEN. Each character has been uniquely programmed, with designs often pulled from various other games and uploaded to the internet over the past 25 years. With a roster estimated to be upwards of 9000 characters, and 24/7 uptime, saltybet.com provides a fun platform in which the audience can gamble using virtual currency on the outcome of a fight. The variability in character code and random matchup selection make reliably predicting the outcome a difficult task. The current iteration of this project aims to tackle this problem by leveraging machine learning models to identify and infer patterns and create accurate predictions with limited datasets.",
-    "p2": "I first stumbled upon saltybet during my time at CodeCore Bootcamp in Vancouver, BC in 2017. It was a simple distraction that I would turn my attention to while waiting for bundler to fetch rubygems (particularly nokogiri at the time), or just to take a break from digesting the algorithm lesson of the day. Suffice to say, in spite of the mild enjoyment of making a wager on what was essentially a coin-toss, I didn&apos;t have the bandwidth to memorize the sheer volume of combinations of fighter attributes and statistics. The obvious solution was to create Saltybot.",
-    "p3": "Saltybot had remained a fever-dream up until December 2024. I&apos;m glad I didn&apos;t dive deeply into it sooner. Sure, writing a bot to scrape the data from either twitch chat or the saltybet site itself was not a novel or insurmountable task by any means, but reading through others&apos; research into similar projects has lead to some interesting discoveries. Notably of which is the suspicion of [https://github.com/odderaser/msu-writing-project/] (who wrote a lovely thesis on deriving probabilities of saltybet outcomes), who posited that the algorithm that selects the fighters for each contest is likely to be at an even skill level to one-another [reference]. Fine-tuning my own iterations of Saltybot seem to correlate this, as any sort of basic metric I implemented (elo, winstreaks, perceived strength based on audience favouritism) did not have a high rate of reliability.",
-    "ref1": "",
-    "ref2": "",
-    "ref3": "",
-    "ref4": "",
-    "see1": "",
-    "see2": "",
-    "see3": "",
-    "see4": "",
-    "tech": "node"
+    "githubURL": "https://github.com/jmacdonald404/saltybot",
+    "tech": "node",
+    "sections": [
+      {
+        "type": "text",
+        "header": "Project Overview",
+        "content": "Saltybot is an ongoing project, designed to collect statistics from [saltybet.com]. The statistics include the outcomes and variables of 1v1 CPU matches on the fighting game platform MUGEN. Each character has been uniquely programmed, with designs often pulled from various other games and uploaded to the internet over the past 25 years. With a roster estimated to be upwards of 9000 characters, and 24/7 uptime, saltybet.com provides a fun platform in which the audience can gamble using virtual currency on the outcome of a fight.",
+        "links": [
+          {
+            "text": "saltybet.com",
+            "url": "https://www.saltybet.com"
+          }
+        ]
+      },
+      {
+        "type": "image",
+        "header": "Interface Design",
+        "content": "",
+        "imageProps": {
+          "src": "/saltybet.jpg",
+          "alt": "Saltybet betting interface showing the main stream and betting panel",
+          "position": "full",
+          "showCaption": true
+        }
+      },
+      {
+        "type": "text",
+        "header": "Project Origins",
+        "content": "I first stumbled upon saltybet during my time at CodeCore Bootcamp in Vancouver, BC in 2017. It was a simple distraction that I would turn my attention to while waiting for bundler to fetch rubygems (particularly nokogiri at the time), or just to take a break from digesting the algorithm lesson of the day. Suffice to say, in spite of the mild enjoyment of making a wager on what was essentially a coin-toss, I didn't have the bandwidth to memorize the sheer volume of combinations of fighter attributes and statistics. The obvious solution was to create Saltybot."
+      },
+      {
+        "type": "image",
+        "header": "Statistical Analysis",
+        "content": "",
+        "imageProps": {
+          "src": "/saltybot-stats.jpg",
+          "alt": "Statistical analysis dashboard showing win rates and prediction accuracy",
+          "position": "right",
+          "width": 400,
+          "showCaption": true
+        }
+      },
+      {
+        "type": "text",
+        "header": "Data Collection",
+        "content": "The initial data collection phase was crucial. I needed to gather enough fight outcomes to start seeing patterns. Each character's performance was tracked across multiple matches, considering factors like opponent type, stage selection, and even time of day. The right-side image shows an early version of the statistics dashboard where we could monitor win rates and prediction accuracy."
+      },
+      {
+        "type": "image",
+        "header": "System Architecture",
+        "content": "",
+        "imageProps": {
+          "src": "/saltybot-architecture.jpg",
+          "alt": "System architecture diagram showing data flow between components",
+          "position": "left",
+          "width": 400,
+          "showCaption": true
+        }
+      },
+      {
+        "type": "text",
+        "header": "Technical Evolution",
+        "content": "The system architecture evolved as the project grew. What started as a simple data collection script became a full-fledged prediction engine with multiple components working together. The left-side diagram illustrates how data flows from the source through various processing stages to generate predictions."
+      }
+    ],
+    "references": [
+      {
+        "text": "Predicting Match Outcomes on SaltyBet",
+        "url": "https://math.montana.edu/grad_students/writing-projects/2019/Love2019.pdf"
+      }
+    ],
+    "seeAlso": [
+      {
+        "text": "MUGEN Documentation",
+        "url": "https://www.elecbyte.com/mugendocs-11b1/mugen.html"
+      },
+      {
+        "text":"SaltyBoy API",
+        "url":"https://salty-boy.com/"
+      }
+    ]
   },
   {
     "id": "5",
     "name": "Portfolio",
     "tags": "design, presentation",
-    "img": "fnf.jpg",
-    "description": "Creating this portfolio site began simply with a desire to explore modern frontend design and use the outcome as a place to showcase a catalogue of my work. Research into various UI libraries led to adopting NextUI, for it's simple yet elegant style and the ease of implementing React based components.",
+    "headerImage": {
+      "src": "/fnf.jpg",
+      "alt": "Portfolio homepage screenshot"
+    },
+    "description": "Creating this portfolio site began simply with a desire to explore modern frontend design and use the outcome as a place to showcase a catalogue of my work.",
     "liveURL": "https://portfo-sparkling-lake-4200.fly.dev/",
     "githubURL": "https://github.com/jmacdonald404/portfo",
-    "p1": "Creating this portfolio site began simply with a desire to explore modern frontend design and use the outcome as a place to showcase a catalogue of my work. Research into various UI libraries led to adopting NextUI, for it's simple yet elegant style and the ease of implementing React based components.",
-    "p2": "",
-    "p3": "",
-    "ref1": "",
-    "ref2": "",
-    "ref3": "",
-    "ref4": "",
-    "see1": "",
-    "see2": "",
-    "see3": "",
-    "see4": "",
-    "tech": "express.js, fly.io, psql"
+    "tech": "express.js, fly.io, psql",
+    "sections": [
+      {
+        "type": "text",
+        "content": "Creating this portfolio site began simply with a desire to explore modern frontend design and use the outcome as a place to showcase a catalogue of my work. Research into various UI libraries led to adopting HeroUI (formerly NextUI), for it's simple yet elegant style and the ease of implementing React based components."
+      },
+      {
+        "type": "text",
+        "content": "The idea to create a simple repository for my work has evolved into a more comprehensive picture of who I am as a developer. I hope to not only show what I am capable of, but how I tackle problems and work through the process of creating functional and elegant solutions that are meaningful and accessible. I continue to add to this portfolio as I grow and learn, and I hope to one day have a diverse collection of projects to showcase."
+      }
+    ]
   }
 ]
