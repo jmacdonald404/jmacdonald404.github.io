@@ -8,6 +8,11 @@ import { Link } from "@heroui/link";
 const HEADER_IMAGE_WIDTH = 350;
 const HEADER_IMAGE_HEIGHT = 250;
 
+// Mobile breakpoint classes
+const MOBILE_CONTAINER_CLASS = "w-full md:w-[960px]";
+const CONTENT_LAYOUT_CLASS = "flex flex-col md:flex-row items-center md:items-start gap-6";
+const CONTENT_CONTAINER_CLASS = "w-full md:w-[560px] px-4 md:px-0";
+
 interface ProjectCardProps {
   title: string;
   tags: string;
@@ -31,13 +36,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   articleURL,
 }) => {
   return (
-    <Card className="w-[960px] space-y-5 p-6" radius="lg" style={{ maxWidth: '960px' }}>
+    <Card className={`${MOBILE_CONTAINER_CLASS} space-y-5 p-4 md:p-6`} radius="lg" style={{ maxWidth: '960px' }}>
       <CardHeader className="pb-0 pt-0 px-0 flex-row items-start w-full" style={{ maxWidth: '100%' }}>
-        <div className="flex flex-column items-start w-full" style={{ maxWidth: '100%' }}>
+        <div className={CONTENT_LAYOUT_CLASS}>
           <div style={{ 
-            width: HEADER_IMAGE_WIDTH, 
-            minWidth: HEADER_IMAGE_WIDTH,
-            maxWidth: HEADER_IMAGE_WIDTH,
+            width: '100%',
+            maxWidth: HEADER_IMAGE_WIDTH, 
             height: HEADER_IMAGE_HEIGHT, 
             overflow: 'hidden',
             flexShrink: 0
@@ -55,25 +59,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               src={headerImage.src}
             />
           </div>
-          <div className="pl-6 w-[560px] flex" style={{ 
-            flexFlow: 'column', 
-            position: 'relative', 
-            height: HEADER_IMAGE_HEIGHT,
-            width: '560px',
-            minWidth: '560px',
-            maxWidth: '560px'
-          }}>
-            <div className="flex-row flex justify-between">
-              <span className="font-bold text-3xl">{title}</span>
-              <div className="mt-1">
+          <div className={`${CONTENT_CONTAINER_CLASS} flex`} style={{ flexFlow: 'column', position: 'relative', height: 'auto', minHeight: HEADER_IMAGE_HEIGHT }}>
+            <div className="flex-row flex flex-wrap justify-between gap-2">
+              <span className="font-bold text-2xl md:text-3xl">{title}</span>
+              <div className="flex gap-2 mt-1">
                 {liveURL && (
                   <Link isExternal href={liveURL}>
-                    <Chip className="" color="secondary">demo</Chip>
+                    <Chip color="secondary">demo</Chip>
                   </Link>
                 )}
                 {githubURL && (
                   <Link isExternal href={githubURL}>
-                    <Chip className="ml-2" color="secondary" variant="bordered">code</Chip>
+                    <Chip color="secondary" variant="bordered">code</Chip>
                   </Link>
                 )}
               </div>
@@ -84,7 +81,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <div className="flex-1 overflow-hidden">
               <span className="text-default-600 line-clamp-4">{description}</span>
             </div>
-            <div className="flex justify-center items-end h-[60px]" style={{ position: "absolute", bottom: "0", width: "100%" }}>
+            <div className="flex justify-center items-end h-[60px] mt-auto">
               <Link 
                 href={articleURL} 
                 className=""
