@@ -1,6 +1,6 @@
 import React from "react";
 import { Image } from "@heroui/image";
-import { Link } from "@heroui/link";
+// import { Link } from "@heroui/link";
 
 interface TextSection {
   subheader?: string;
