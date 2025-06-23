@@ -4,6 +4,7 @@ import fs from "fs"
 import path from "path"
 import { Article } from '@/components/article/Article'
 import { title } from "@/components/primitives";
+import { Button } from "@heroui/button";
 
 export async function getStaticPaths() {
   const filePath = path.join(process.cwd(), "public", "code.json");
@@ -40,9 +41,11 @@ function PostPage({ post }) {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="flex text-center justify-between pb-10 flex-row w-[930px]">
-          <h1 className={title()} onPress={() => router.back()}>&lt;-</h1>
-          <h1 className={title()}>{post.name}</h1>
-          <h1 style={{opacity:"0"}}>null</h1>
+        <h1 className={title()}>
+            <Button style={{fontSize:32}} isIconOnly variant='light' onPress={() => router.back()}>&lt;-</Button>
+        </h1>
+        <h1 className={title()}>{post.name}</h1>
+        <h1 style={{opacity:"0"}}>null</h1>
         </div>
         <Article
           title={post.name}
