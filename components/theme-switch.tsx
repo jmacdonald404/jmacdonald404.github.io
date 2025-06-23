@@ -104,6 +104,7 @@ export function ThemeSwitch() {
 
   return (
     <div>
+      {/* TODO: onClick is deprecated, figure out a fix */}
       <button onClick={() => theme === 'dark' ? setTheme('light') : setTheme('dark')}>{theme === 'light' ? (
           <MoonFilledIcon size={22} />
         ) : (

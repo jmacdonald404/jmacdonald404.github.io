@@ -33,7 +33,7 @@ export const ScrollToTopButton = () => {
         <Button
 
           className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
-          onClick={scrollToTop}
+          onPress={scrollToTop}
           style={{
             position: "fixed",
             bottom: "20px",

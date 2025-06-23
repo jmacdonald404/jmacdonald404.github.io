@@ -45,7 +45,7 @@ export default function DocsPage({posts}: CodePageProps) {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="flex text-center justify-between pb-5 flex-row w-[930px]">
-          <h1 className={title()} onClick={() => router.back()}>&lt;-</h1>
+          <h1 className={title()} onPress={() => router.back()}>&lt;-</h1>
           <h1 className={title()}>Code Projects</h1>
           <h1 style={{opacity:"0"}}>null</h1>
         </div>
