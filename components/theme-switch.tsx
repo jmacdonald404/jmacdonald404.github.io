@@ -90,6 +90,7 @@
 import {useTheme} from "next-themes";
 import { useEffect, useState } from "react";
 import { SunFilledIcon, MoonFilledIcon } from "@/components/icons";
+import { Button } from "@heroui/button";
 
 export function ThemeSwitch() {
   const [mounted, setMounted] = useState(false)
@@ -104,12 +105,11 @@ export function ThemeSwitch() {
 
   return (
     <div>
-      {/* TODO: onClick is deprecated, figure out a fix */}
-      <button onClick={() => theme === 'dark' ? setTheme('light') : setTheme('dark')}>{theme === 'light' ? (
+      <Button isIconOnly variant='light' onPress={() => theme === 'dark' ? setTheme('light') : setTheme('dark')}>{theme === 'light' ? (
           <MoonFilledIcon size={22} />
         ) : (
           <SunFilledIcon size={22} />
-        )}</button>
+        )}</Button>
     </div>
   )
 };
