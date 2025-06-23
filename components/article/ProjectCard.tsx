@@ -11,7 +11,7 @@ const HEADER_IMAGE_HEIGHT = 250;
 // Mobile breakpoint classes
 const MOBILE_CONTAINER_CLASS = "w-full md:w-[960px]";
 const CONTENT_LAYOUT_CLASS = "flex flex-col md:flex-row items-center md:items-start gap-6";
-const CONTENT_CONTAINER_CLASS = "w-full md:w-[560px] px-4 md:px-0";
+const CONTENT_CONTAINER_CLASS = "w-full md:w-[650px] px-4 md:px-0";
 
 interface ProjectCardProps {
   title: string;
