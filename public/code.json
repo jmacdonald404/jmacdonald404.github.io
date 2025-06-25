@@ -110,16 +110,49 @@
   },
   {
     "id": "2",
+    "name": "JJNotes",
+    "tags": "notes, todo, mobile",
+    "headerImage": {
+      "src": "/jjnotes1.jpg",
+      "alt": "JJNotes interface screenshot"
+    },
+    "description": "JJNotes is a current project in the works, addressing the need for a modern cross-platform note-taking app. It should be reliable, secure, functional, and simple.",
+    "liveURL": "https://jjnotes-late-butterfly-3194.fly.dev/",
+    "githubURL": "https://github.com/jmacdonald404/jjnotes",
+    "tech": "typescript, nextjs, heroui, react native",
+    "sections": [
+      {
+        "type": "text",
+        "header": "Project Overview",
+        "content": [
+          {
+            "text": "One of my friends has been letting this idea percolate for a while now. Since I've had some time to spare recently, and wanting to make sure I was up-to-date on modern JS, I decided to help bring this idea to fruition."
+          },
+          {
+            "text": "I haven't had a chance to do much mobile-first development since attending CodeCore here in Vancouver, so I was eager to explore how the landscape has changed since then. I came up with a working prototype with Next.js and HeroUI (formerly NextUI) based on my friend's consultation. I initially constructed the app with Electron in mind for cross-platform, but soon realized that I had wrongly assumed that it covered mobile OSes as well. Currently, I am rethinking the architecture, likely starting from React Native and working on compatibility from there."
+          }
+        ]
+      }
+    ],
+    "references": [
+
+    ],
+    "seeAlso": [
+
+    ]
+  },
+  {
+    "id": "3",
     "name": "Saltybot",
     "tags": "statistics, prediction",
     "headerImage": {
       "src": "/saltybot.jpg",
       "alt": "Saltybot interface screenshot"
     },
-    "description": "Saltybot is an ongoing project, designed to collect statistics from saltybet.com. The variability in character code and random matchup selection make reliably predicting the outcome a difficult task.",
+    "description": "Saltybot is an experimental project, designed to collect statistics from saltybet.com. The variability in character code and random matchup selection make reliably predicting the outcome a difficult task.",
     "liveURL": "https://saltybot.fly.dev",
     "githubURL": "https://github.com/jmacdonald404/saltybot",
-    "tech": "node",
+    "tech": "node, python, ML",
     "sections": [
       {
         "type": "text",
@@ -201,7 +234,7 @@
     ]
   },
   {
-    "id": "5",
+    "id": "4",
     "name": "Portfolio",
     "tags": "design, presentation",
     "headerImage": {
