@@ -5,7 +5,7 @@ import { button as buttonStyles } from "@heroui/theme";
 
 import { siteConfig } from "@/config/site";
 import { title } from "@/components/primitives";
-import { GithubIcon, ResumeIcon } from "@/components/icons";
+import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 
 export default function IndexPage() {
@@ -38,14 +38,6 @@ export default function IndexPage() {
           >
             <GithubIcon size={20} />
             GitHub
-          </Link>
-          <Link
-            isExternal
-            className={buttonStyles({ variant: "bordered", radius: "full" })}
-            href={siteConfig.links.resume}
-          >
-            <ResumeIcon size={20} />
-            Resume
           </Link>
         </div>
 
