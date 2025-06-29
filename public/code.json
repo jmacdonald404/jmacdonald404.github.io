@@ -4,7 +4,7 @@
     "name": "Food delivery app",
     "tags": "webapp, catering platform",
     "headerImage": {
-      "src": "/delivery1.jpg",
+      "src": "/jmacdonald404.github.io/delivery1.jpg",
       "alt": "Food delivery app interface"
     },
     "description": "This is a generic version of a food delivery app I was contracted to develop in 2019. Built on Rails, it emulates functionality from other popular food delivery apps. Utilizing a number of APIs, we were able to make this project come to fruition in a timely manner.",
@@ -28,7 +28,7 @@
         "type": "image",
         "content": "",
         "imageProps": {
-          "src": "/delivery-dashboard.jpg",
+          "src": "/jmacdonald404.github.io/delivery-dashboard.jpg",
           "alt": "Food delivery app dashboard interface showing the main order management screen",
           "position": "full",
           "showCaption": false
@@ -113,7 +113,7 @@
     "name": "JJNotes",
     "tags": "notes, todo, mobile",
     "headerImage": {
-      "src": "/jjnotes1.jpg",
+      "src": "/jmacdonald404.github.io/jjnotes1.jpg",
       "alt": "JJNotes interface screenshot"
     },
     "description": "JJNotes is a current project in the works, addressing the need for a modern cross-platform note-taking app. It should be reliable, secure, functional, and simple.",
@@ -146,7 +146,7 @@
     "name": "Saltybot",
     "tags": "statistics, prediction",
     "headerImage": {
-      "src": "/saltybot.jpg",
+      "src": "/jmacdonald404.github.io/saltybot.jpg",
       "alt": "Saltybot interface screenshot"
     },
     "description": "Saltybot is an experimental project, designed to collect statistics from saltybet.com. The variability in character code and random matchup selection make reliably predicting the outcome a difficult task.",
@@ -170,7 +170,7 @@
         "header": "Interface Design",
         "content": "",
         "imageProps": {
-          "src": "/saltybet.jpg",
+          "src": "/jmacdonald404.github.io/saltybet.jpg",
           "alt": "Saltybet betting interface showing the main stream and betting panel",
           "position": "full",
           "showCaption": true
@@ -186,7 +186,7 @@
         "header": "Statistical Analysis",
         "content": "",
         "imageProps": {
-          "src": "/saltybot-stats.jpg",
+          "src": "/jmacdonald404.github.io/saltybot-stats.jpg",
           "alt": "Statistical analysis dashboard showing win rates and prediction accuracy",
           "position": "right",
           "width": 400,
@@ -203,7 +203,7 @@
         "header": "System Architecture",
         "content": "",
         "imageProps": {
-          "src": "/saltybot-architecture.jpg",
+          "src": "/jmacdonald404.github.io/saltybot-architecture.jpg",
           "alt": "System architecture diagram showing data flow between components",
           "position": "left",
           "width": 400,
@@ -238,13 +238,13 @@
     "name": "Portfolio",
     "tags": "design, presentation",
     "headerImage": {
-      "src": "/fnf.jpg",
+      "src": "/jmacdonald404.github.io/fnf.jpg",
       "alt": "Portfolio homepage screenshot"
     },
     "description": "Creating this portfolio site began simply with a desire to explore modern frontend design and use the outcome as a place to showcase a catalogue of my work.",
-    "liveURL": "https://portfo-sparkling-lake-4200.fly.dev/",
-    "githubURL": "https://github.com/jmacdonald404/portfo",
-    "tech": "express.js, fly.io, psql",
+    "liveURL": "https:///jmacdonald404.github.io",
+    "githubURL": "https://github.com/jmacdonald404/jmacdonald404.github.io",
+    "tech": "nextjs, heroui",
     "sections": [
       {
         "type": "text",
