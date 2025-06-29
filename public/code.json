@@ -117,7 +117,7 @@
       "alt": "JJNotes interface screenshot"
     },
     "description": "JJNotes is a current project in the works, addressing the need for a modern cross-platform note-taking app. It should be reliable, secure, functional, and simple.",
-    "liveURL": "https://jjnotes-late-butterfly-3194.fly.dev/",
+    "liveURL": "",
     "githubURL": "https://github.com/jmacdonald404/jjnotes",
     "tech": "typescript, nextjs, heroui, react native",
     "sections": [
