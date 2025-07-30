@@ -2,6 +2,8 @@ import {
   Navbar as NextUINavbar,
   NavbarContent,
   NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
   NavbarItem,
 } from "@heroui/navbar";
 import { Link } from "@heroui/link";
@@ -80,6 +82,21 @@ export const Navbar = () => {
         <NavbarMenuToggle />
       </NavbarContent>
 
+      <NavbarMenu>
+        {siteConfig.navItems.map((item, index) => (
+          <NavbarMenuItem key={`${item.label}-${index}`} className="flex justify-end py-[30px]">
+            <NextLink
+              className={clsx(
+                linkStyles({ color: "foreground" })
+              )}
+              color="foreground"
+              href={item.href}
+            >
+              {item.label}
+            </NextLink>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
 
     </NextUINavbar>
   );
