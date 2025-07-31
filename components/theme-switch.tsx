@@ -105,7 +105,7 @@ export function ThemeSwitch() {
 
   return (
     <div>
-      <Button isIconOnly variant='light' onPress={() => theme === 'dark' ? setTheme('light') : setTheme('dark')}>{theme === 'light' ? (
+      <Button isIconOnly variant='light' disableAnimation radius="full" className="p-0 bg-transparent" onPress={() => theme === 'dark' ? setTheme('light') : setTheme('dark')}>{theme === 'light' ? (
           <MoonFilledIcon size={22} />
         ) : (
           <SunFilledIcon size={22} />

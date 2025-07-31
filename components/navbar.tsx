@@ -14,7 +14,8 @@ import clsx from "clsx";
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "./theme-switch";
 import {
-  GithubIcon
+  GithubIcon,
+  EmailIcon
 } from "./icons";
 
 export const Navbar = () => {
@@ -64,22 +65,29 @@ export const Navbar = () => {
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden sm:flex gap-2">
-
-          <Link isExternal href={siteConfig.links.github} title="GitHub">
-            <GithubIcon className="text-default-500" />
-          </Link>
-          <ThemeSwitch />
+        <NavbarItem className="hidden sm:flex">
+          <div className="flex gap-3">
+            <Link isExternal href={siteConfig.links.email} title="Email" className="w-10 h-10 flex items-center justify-center">
+              <EmailIcon className="text-default-500" />
+            </Link>
+            <Link isExternal href={siteConfig.links.github} title="GitHub" className="w-10 h-10 flex items-center justify-center">
+              <GithubIcon className="text-default-500" />
+            </Link>
+            <ThemeSwitch className="w-10 h-10 flex items-center justify-center" />
+          </div>
         </NavbarItem>
 
       </NavbarContent>
 
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github}>
+      <NavbarContent className="sm:hidden basis-1 pl-4 gap-3" justify="end">
+        <Link isExternal href={siteConfig.links.email} className="w-10 h-10 flex items-center justify-center">
+          <EmailIcon className="text-default-500" />
+        </Link>
+        <Link isExternal href={siteConfig.links.github} className="w-10 h-10 flex items-center justify-center">
           <GithubIcon className="text-default-500" />
         </Link>
-        <ThemeSwitch />
-        <NavbarMenuToggle />
+        <ThemeSwitch className="w-10 h-10 flex items-center justify-center" />
+        <NavbarMenuToggle className="w-10 h-10 flex items-center justify-center" />
       </NavbarContent>
 
       <NavbarMenu>

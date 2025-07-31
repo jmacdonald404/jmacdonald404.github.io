@@ -1,5 +1,73 @@
 [
   {
+    "id": "5",
+    "name": "SLV-Rust",
+    "tags": "rust, networking, server, client",
+    "headerImage": {
+      "src": "/slv.png",
+      "alt": "SLV-Rust networking code"
+    },
+    "description": "SLV-Rust is a high-performance networking project developed in Rust, focusing on efficient server-client communication. This project explores advanced networking concepts and aims to provide a robust and scalable foundation for distributed applications.",
+    "liveURL": "",
+    "githubURL": "https://github.com/jmacdonald404/slv-rust/tree/networking",
+    "tech": "rust, async, tokio, networking",
+    "sections": [
+      {
+        "type": "text",
+        "header": "Project Overview",
+        "content": [
+          {
+            "text": "SLV-Rust is an experimental project exploring high-performance networking paradigms using the Rust programming language. The primary goal was to build a robust and efficient server-client communication system capable of handling concurrent connections and data transfer with minimal overhead."
+          },
+          {
+            "text": "The project specifically delves into asynchronous programming with Rust, leveraging its ownership model and concurrency features to ensure thread safety and optimal resource utilization. This was a deep dive into the intricacies of low-level network programming."
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "header": "Technical Implementation",
+        "content": [
+          {
+            "subheader": "Asynchronous Architecture",
+            "text": "The core of SLV-Rust is built around an asynchronous architecture, primarily utilizing the `tokio` runtime. This allowed for non-blocking I/O operations, enabling the server to handle multiple client connections concurrently without creating a new thread for each, thus significantly improving scalability."
+          },
+          {
+            "subheader": "Protocol Design",
+            "text": "A custom binary protocol was designed for efficient data exchange between the server and clients. This involved careful consideration of message framing, serialization, and deserialization to minimize overhead and ensure reliable communication."
+          },
+          {
+            "subheader": "Error Handling and Resilience",
+            "text": "Rust's robust type system and emphasis on explicit error handling were instrumental in building a resilient networking application. The project incorporates comprehensive error management strategies to gracefully handle network failures, malformed data, and other unexpected events."
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "header": "Challenges and Learnings",
+        "content": [
+          {
+            "text": "One of the main challenges was mastering Rust's asynchronous ecosystem, particularly understanding the nuances of `async/await` and the `tokio` framework. Debugging concurrent network applications also presented a unique set of difficulties, requiring careful use of logging and tracing."
+          },
+          {
+            "text": "This project provided invaluable experience in designing and implementing low-level networking components, understanding the trade-offs between different architectural choices, and leveraging Rust's performance characteristics for demanding applications."
+          }
+        ]
+      }
+    ],
+    "references": [
+      {
+        "text": "Tokio Documentation",
+        "url": "https://tokio.rs/"
+      },
+      {
+        "text": "The Rust Programming Language",
+        "url": "https://doc.rust-lang.org/book/"
+      }
+    ],
+    "seeAlso": []
+  },
+  {
     "id": "1",
     "name": "Food delivery app",
     "tags": "webapp, catering platform",
@@ -83,7 +151,7 @@
         "header": "Reflections",
         "content": [
           {
-            "text": "The MVP mindset served us well for rapid deployment, but it also created some blind spots in long-term planning. If I were to approach this project again, I would consider using Electron and React (or similar component-based frameworks) from the beginning, along with a mobile-first design perspective. The logical next step for this type of app would be mobile transition—a significant undertaking that would have been easier with different initial architectural decisions. Having never previously architected a full-scale production app, I learned valuable lessons about planning for application evolution beyond the initial launch phase."
+            "text": "The MVP mindset served us well for rapid deployment, but it also created some blind spots in long-term planning. If I were to approach this project again, I would consider using Electron and React (or similar component-based frameworks) from the beginning, along with a mobile-first design perspective. The logical next step for this type of app would be mobile transition—significant undertaking that would have been easier with different initial architectural decisions. Having never previously architected a full-scale production app, I learned valuable lessons about planning for application evolution beyond the initial launch phase."
           },
           {
             "text": "The most rewarding aspect was testing the complete user flow after API implementation—witnessing the seamless communication between different code systems working in tandem to create something genuinely useful. There's something deeply satisfying about that orchestration of technologies, like hearing a beautiful symphony where each component plays its part perfectly."
@@ -230,29 +298,6 @@
       {
         "text":"SaltyBoy API",
         "url":"https://salty-boy.com/"
-      }
-    ]
-  },
-  {
-    "id": "4",
-    "name": "Portfolio",
-    "tags": "design, presentation",
-    "headerImage": {
-      "src": "/fnf.jpg",
-      "alt": "Portfolio homepage screenshot"
-    },
-    "description": "Creating this portfolio site began simply with a desire to explore modern frontend design and use the outcome as a place to showcase a catalogue of my work.",
-    "liveURL": "https://jmacdonald404.github.io",
-    "githubURL": "https://github.com/jmacdonald404",
-    "tech": "nextjs, heroui",
-    "sections": [
-      {
-        "type": "text",
-        "content": "Creating this portfolio site began simply with a desire to explore modern frontend design and use the outcome as a place to showcase a catalogue of my work. Research into various UI libraries led to adopting HeroUI (formerly NextUI), for it's simple yet elegant style and the ease of implementing React based components."
-      },
-      {
-        "type": "text",
-        "content": "The idea to create a simple repository for my work has evolved into a more comprehensive picture of who I am as a developer. I hope to not only show what I am capable of, but how I tackle problems and work through the process of creating functional and elegant solutions that are meaningful and accessible. I continue to add to this portfolio as I grow and learn, and I hope to one day have a diverse collection of projects to showcase."
       }
     ]
   }
