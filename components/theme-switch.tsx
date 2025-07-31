@@ -92,7 +92,11 @@ import { useEffect, useState } from "react";
 import { SunFilledIcon, MoonFilledIcon } from "@/components/icons";
 import { Button } from "@heroui/button";
 
-export function ThemeSwitch() {
+interface ThemeSwitchProps {
+  className?: string;
+}
+
+export function ThemeSwitch({ className }: ThemeSwitchProps) {
   const [mounted, setMounted] = useState(false)
   const { theme, setTheme } = useTheme()
 
@@ -104,7 +108,7 @@ export function ThemeSwitch() {
   if(!mounted) return null
 
   return (
-    <div>
+    <div className={className}>
       <Button isIconOnly variant='light' disableAnimation radius="full" className="p-0 bg-transparent" onPress={() => theme === 'dark' ? setTheme('light') : setTheme('dark')}>{theme === 'light' ? (
           <MoonFilledIcon size={22} />
         ) : (
